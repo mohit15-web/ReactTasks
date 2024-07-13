@@ -5,7 +5,12 @@ function TaskOne() {
   let [oddArr,setOddArr] = useState([])
   let [evenArr,setEvenArr] = useState([])
   const handleSubmit = () => {
+    if(number === "") {
+      alert("Please enter a number");
+      return
+    }
     let num = parseInt(number)
+    console.log(num , "number after parse")
     if(num%2 === 0){
         setEvenArr([...evenArr , num])
     }else{

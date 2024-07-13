@@ -6,6 +6,10 @@ function TaskThree() {
   let [totalSoldPrice, setTotalSoldPrice] = useState(0);
   let [totalProfit, setTotalProfit] = useState(0);
   const handleSubmit = () => {
+    if(query === 0) {
+      alert("Please enter something");
+      return
+    }
    setSoldPriceList([...soldPriceList , query])
     setQuery("");
   };

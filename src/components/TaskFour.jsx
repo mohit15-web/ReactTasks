@@ -6,7 +6,10 @@ function TaskFour() {
     const[name,setName] = useState('')
     const[price,setPrice] = useState(0)
     const handleSubmit = () => {
-        
+      if(name === "" || price === 0) {
+        alert("Please enter something");
+        return
+      }
         setProductArr(
             [...productArr ,{id:Date.now(),title:name,price:parseInt(price)}]
         )

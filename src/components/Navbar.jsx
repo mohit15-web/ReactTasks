@@ -48,7 +48,7 @@ export function ExampleNavbarTwo() {
                 />
               </svg>
             </span>
-            <span className="font-bold">DevUI</span>
+            <span className="font-bold">React Tasks</span>
           </div>
         </a>
         <div className="hidden grow items-start lg:flex">

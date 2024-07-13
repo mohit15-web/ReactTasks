@@ -5,6 +5,10 @@ function TaskTwo() {
   let [stringArr, setStringArr] = useState([]);
   let [numberArr, setNumberArr] = useState([]);
   const handleSubmit = () => {
+    if(query === "") {
+      alert("Please enter something");
+      return
+    }
     let str2 = "";
     query.split("").forEach((char) => {
       if (char >= "a" && char <= "z") {
